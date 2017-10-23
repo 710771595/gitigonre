@@ -7,4 +7,7 @@ target 'gitgonre' do
 
   # Pods for gitgonre
 
+  pod 'AFNetworking'
+
+
 end

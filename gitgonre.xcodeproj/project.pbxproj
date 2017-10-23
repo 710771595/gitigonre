@@ -13,6 +13,7 @@
 		2D8053511F9E11B500B81ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8053501F9E11B500B81ACC /* Assets.xcassets */; };
 		2D8053541F9E11B500B81ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8053521F9E11B500B81ACC /* LaunchScreen.storyboard */; };
 		2D8053571F9E11B500B81ACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8053561F9E11B500B81ACC /* main.m */; };
+		5EE3035D8014CB873599DB00 /* libPods-gitgonre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2835A8C5AD1D431C06EBBA /* libPods-gitgonre.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		2D8053531F9E11B500B81ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D8053551F9E11B500B81ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D8053561F9E11B500B81ACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34BF32A76E62835F3D881B1B /* Pods-gitgonre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitgonre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gitgonre/Pods-gitgonre.debug.xcconfig"; sourceTree = "<group>"; };
+		4E2835A8C5AD1D431C06EBBA /* libPods-gitgonre.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gitgonre.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		866071BCAAACBBF3B3BD7255 /* Pods-gitgonre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitgonre.release.xcconfig"; path = "Pods/Target Support Files/Pods-gitgonre/Pods-gitgonre.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE3035D8014CB873599DB00 /* libPods-gitgonre.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				2D8053461F9E11B500B81ACC /* gitgonre */,
 				2D8053451F9E11B500B81ACC /* Products */,
+				3EF6E5362497D5F81B8451E0 /* Pods */,
+				CD9D7A35B804A103F23DC576 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = gitgonre;
 			sourceTree = "<group>";
 		};
+		3EF6E5362497D5F81B8451E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34BF32A76E62835F3D881B1B /* Pods-gitgonre.debug.xcconfig */,
+				866071BCAAACBBF3B3BD7255 /* Pods-gitgonre.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD9D7A35B804A103F23DC576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E2835A8C5AD1D431C06EBBA /* libPods-gitgonre.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D80535A1F9E11B500B81ACC /* Build configuration list for PBXNativeTarget "gitgonre" */;
 			buildPhases = (
+				448671B513F5FEC86428C302 /* [CP] Check Pods Manifest.lock */,
 				2D8053401F9E11B500B81ACC /* Sources */,
 				2D8053411F9E11B500B81ACC /* Frameworks */,
 				2D8053421F9E11B500B81ACC /* Resources */,
+				F017646653C68849DE9F39FF /* [CP] Embed Pods Frameworks */,
+				0A50C60A5DC53953CA85B2F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A50C60A5DC53953CA85B2F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gitgonre/Pods-gitgonre-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		448671B513F5FEC86428C302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gitgonre-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F017646653C68849DE9F39FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gitgonre/Pods-gitgonre-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D8053401F9E11B500B81ACC /* Sources */ = {
@@ -276,6 +354,7 @@
 		};
 		2D80535B1F9E11B500B81ACC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34BF32A76E62835F3D881B1B /* Pods-gitgonre.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +368,7 @@
 		};
 		2D80535C1F9E11B500B81ACC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866071BCAAACBBF3B3BD7255 /* Pods-gitgonre.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
